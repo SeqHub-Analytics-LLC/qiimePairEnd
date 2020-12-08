@@ -1,6 +1,6 @@
 #  Pair End Qiime Analysis Pipeline
 
-https://user-images.githubusercontent.com/39276857/101550906-6830fb80-39b0-11eb-90d6-62a69447ced1.png)
+https://user-images.githubusercontent.com/39276857/101550906-6830fb80-39b0-11eb-90d6-62a69447ced1.png
 
 ## About Analysis
 An analysis of soil samples from the Atacama Desert in northern Chile. The Atacama Desert is one of the most arid locations on Earth, with some areas receiving less than a millimeter of rain per decade. Despite this extreme aridity, there are microbes living in the soil. The soil microbiomes profiled in this study follow two east-west transects, Baquedano and Yungay, across which average soil relative humidity is positively correlated with elevation (higher elevations are less arid and thus have higher average soil relative humidity). Along these transects, pits were dug at each site and soil samples were collected from three depths in each pit.
