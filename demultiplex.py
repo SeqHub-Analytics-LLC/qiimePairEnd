@@ -28,14 +28,13 @@ def demultiplex(pair_end_sequences):
 
     demux_per_sample=demux_sequences.per_sample_sequences.save("per_sample.qza")
 
+    demux_summary = demux.visualizers.summarize(demux_sequences.per_sample_sequences)
+
+    print(demux_summary.visualization)
 
 
     return demux_per_sample
 
-
-    demux_summary = summarize(demux_per_sample)
-
-    demux_summary.visualization
 
 
 
