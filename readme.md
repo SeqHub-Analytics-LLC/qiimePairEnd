@@ -48,3 +48,17 @@ representative_sequences : FeatureData[Sequence]
     joined paired-end sequences.
 
 denoising_stats : SampleData[DADA2Stats]
+
+
+
+
+
+## taxonomicClass.py
+This script does the identification of the organisms that are present in a sample
+
+https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0470-z
+"We can do this by comparing our query sequences (i.e., our features, be they ASVs or OTUs) to a reference database of sequences with known taxonomic composition. Simply finding the closest alignment is not really good enough — because other sequences that are equally close matches or nearly as close may have different taxonomic annotations. So we use taxonomy classifiers to determine the closest taxonomic affiliation with some degree of confidence or consensus (which may not be a species name if one cannot be predicted with certainty!), based on alignment, k-mer frequencies, etc"
+
+It is run with {python taxonomicClass.py rep_seq.qza }
+
+The output is taxa_class(.qza) which can be converted into a csv file(taxa_class.csv)
