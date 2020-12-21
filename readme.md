@@ -50,7 +50,13 @@ representative_sequences : FeatureData[Sequence]
 denoising_stats : SampleData[DADA2Stats]
 
 
+## fullPipeline.py
+This script is a combination of the 3 scripts above(dataprocess, demultiplex, denoise) 
+The result of the fullPipeline.py can be used downstream for other analysis e.g taxanomic classification
 
+It is run with {python fullPipeline.py (The directory of our pairend sequence reads) }
+
+The final output(s) is the output(s) gotten from the denoise script  
 
 
 ## taxonomicClass.py
