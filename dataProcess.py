@@ -9,7 +9,7 @@ workdir='./'
 # Function to perform raw sequence processing(import to artifact)
 def import_data_format(seq_path):
     pair_end_sequences = qiime2.Artifact.import_data(
-        'EMPPairedEndSequences', workdir+'/emp-paired-end-sequences')
+        'EMPPairedEndSequences', workdir+ seq_path)
  
     pair_end=pair_end_sequences.save("pair_end.qza")
 
@@ -18,7 +18,7 @@ def import_data_format(seq_path):
 
 
 def main():
-    "Our input here is the raw sequence reads directory(fastq) "
+    "Our input here is the raw sequence reads(fastq) "
     import_data_format(sys.argv[1])
 
 
