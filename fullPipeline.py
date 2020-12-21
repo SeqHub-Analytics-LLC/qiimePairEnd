@@ -55,7 +55,7 @@ def demultiplex(pair_end_sequences):
 
 # denoising
 def denoise(demux_per_sample):
-    clean_seq = denoise_paired((demux_per_sample),
+    clean_seq = denoise_paired(qiime2.Artifact.load(demux_per_sample),
                                trunc_len_f=150, trunc_len_r=150,
                                trim_left_f=13, trim_left_r=13, n_threads=4)
 
