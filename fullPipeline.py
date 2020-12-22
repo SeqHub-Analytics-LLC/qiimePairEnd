@@ -45,7 +45,7 @@ def demultiplex(pair_end_sequences):
 
     demux_summary = demux.visualizers.summarize(demux_sequences.per_sample_sequences)
     #viz = feature_table.visualizers.tabulate_seqs(rep_seqs)
-    demux_per_sample.visualization.save('foo.qzv')
+    #demux_per_sample.visualization.save('foo.qzv')
     #!qiime tools view foo.qzv
 
     print(demux_summary.visualization)
