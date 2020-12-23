@@ -28,12 +28,11 @@ The output is per_sample_sequences(.qza)
 ## denoise.py
 Denoising and clustering
 
-We denoise our sequences to remove and/or correct noisy reads. 🔊
+We denoise our sequences to remove and/or correct noisy reads. 
 
-We dereplicate our sequences to reduce repetition and file size/memory requirements in downstream steps (don’t worry! we keep count of each replicate). 🕵️
+We dereplicate our sequences to reduce repetition and file size/memory requirements in downstream steps (don’t worry! we keep count of each replicate). 
 
-We cluster sequences to collapse similar sequences (e.g., those that are ≥ 97% similar to each other) into single replicate sequences. This process, also known as OTU picking, was once a common procedure, used to simultaneously dereplicate but also perform a sort of quick-and-dirty denoising procedure (to capture stochastic sequencing and PCR errors, which should be rare and similar to more abundant centroid sequences). Use denoising methods instead if you can. Times have changed. Welcome to the future. 😎
-
+We cluster sequences to collapse similar sequences (e.g., those that are ≥ 97% similar to each other) into single replicate sequences. This process, also known as OTU picking, was once a common procedure, used to simultaneously dereplicate but also perform a sort of quick-and-dirty denoising procedure (to capture stochastic sequencing and PCR errors, which should be rare and similar to more abundant centroid sequences). 
 
 It is run with {python denoise.py perSampleSequence.qza}
 
